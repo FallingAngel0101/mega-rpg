@@ -1,0 +1,12 @@
+
+
+.createHero {
+    background-color: rgb(168, 228, 160);
+    opacity: 90%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}

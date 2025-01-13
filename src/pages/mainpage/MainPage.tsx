@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./MainPage.css";
-import Footer from "../footer/Footer";
+import Footer from "../../components/footer/Footer";
 
 const MainPage: React.FC = () => {
   const section1Ref = useRef<HTMLDivElement>(null);
@@ -70,7 +70,7 @@ const MainPage: React.FC = () => {
 
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "ArrowDown") {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % 3); 
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % 3);
         setIsScrollingUp(false);
       } else if (event.key === "ArrowUp") {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + 3) % 3);
